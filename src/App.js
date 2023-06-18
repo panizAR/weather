@@ -47,6 +47,9 @@ export default function Search() {
             <img src={weather.icon} alt={weather.description} />
           </li>
         </ul>
+        <div>
+          <a href="https://github.com/panizAR/weather">My GitHub Weather repository Link</a>
+        </div>
       </div>
     );
   } else {
