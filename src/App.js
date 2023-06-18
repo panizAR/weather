@@ -29,26 +29,30 @@ export default function Search() {
   }
   if (loaded) {
     return (
-      <div className="center">
-        <form onSubmit={submit}>
-          <input
-            type="text"
-            placeholder="search for a city"
-            onChange={cityName}
-          />
-          <input type="submit" value="search" />
-        </form>
-        <ul>
-          <li>Temperature: {Math.round(weather.temperature)}°C</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
-          <li>
-            <img src={weather.icon} alt={weather.description} />
-          </li>
-        </ul>
-        <div>
-          <a href="https://github.com/panizAR/weather">My GitHub Weather repository Link</a>
+      <div>
+        <div className="center">
+          <form onSubmit={submit}>
+            <input
+              type="text"
+              placeholder="search for a city"
+              onChange={cityName}
+            />
+            <input type="submit" value="search" />
+          </form>
+          <ul>
+            <li>Temperature: {Math.round(weather.temperature)}°C</li>
+            <li>Description: {weather.description}</li>
+            <li>Humidity: {weather.humidity}%</li>
+            <li>Wind: {weather.wind}km/h</li>
+            <li>
+              <img src={weather.icon} alt={weather.description} />
+            </li>
+          </ul>
+        </div>
+        <div className="center">
+          <a href="https://github.com/panizAR/weather">
+            My GitHub Weather repository Link
+          </a>
         </div>
       </div>
     );
@@ -63,6 +67,11 @@ export default function Search() {
           />
           <input type="submit" value="search" />
         </form>
+        <div className="center">
+          <a href="https://github.com/panizAR/weather">
+            My GitHub Weather repository Link
+          </a>
+        </div>
       </div>
     );
   }
